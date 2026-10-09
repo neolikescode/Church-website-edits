@@ -197,8 +197,8 @@ section h1 {
 #upcoming-events {
     margin: 25px 0;
     padding: 25px;
-    border: 2px solid #0062D7;
-    background-color: #FFFFFF;
+    border: 2px solid #C89B3C;
+    background-color: #332F2B;
 }
 
 
@@ -206,19 +206,12 @@ section h1 {
    HOME PAGE
    ========================================= */
 
-.class1 {
-    margin: 25px 0;
-    padding: 25px;
-    border: 2px solid #0062D7;
-    background-color: #332F2B;
-}
-
 /* Hero: photo with a gradient over it so the text stays legible */
 #hero {
     position: relative;
     height: 340px;
     margin: 25px 0;
-    border: 2px solid #0062D7;
+    border: 2px solid #C89B3C;
     background-color: #332F2B;
     background-image: linear-gradient(to bottom, rgba(51, 47, 43, 0) 30%, rgba(51, 47, 43, 1) 100%), url("../images/backgroundimage2.jpg");
     background-repeat: no-repeat;
@@ -245,17 +238,18 @@ section h1 {
 /* Three link cards side by side (float) */
 #quick-links {
     overflow: hidden;
+    
 }
 
 .link-card {
-    float: left;
     width: 31%;
     margin: 0 1% 25px 1%;
     padding: 20px;
-    border: 2px solid #0062D7;
+    border: 1px solid #C89B3C;
     border-top: 4px solid #C89B3C;
-    background-color: #FFFFFF;
+    background-color: #332F2B;
     text-align: center;
+    display: block;
 }
 
 .link-card h2 {
@@ -263,7 +257,17 @@ section h1 {
     font-size: 1.3em;
 }
 
+#services-card {
+    float: left;
+}
 
+#give-card {
+    float: right;
+}
+
+#contact-card {
+    display: inline-block;
+}
 /* =========================================
    ABOUT US PAGE
    ========================================= */
