@@ -206,6 +206,13 @@ section h1 {
    HOME PAGE
    ========================================= */
 
+.class1 {
+    margin: 25px 0;
+    padding: 25px;
+    border: 2px solid #0062D7;
+    background-color: #332F2B;
+}
+
 /* Hero: photo with a gradient over it so the text stays legible */
 #hero {
     position: relative;
@@ -213,10 +220,7 @@ section h1 {
     margin: 25px 0;
     border: 2px solid #0062D7;
     background-color: #332F2B;
-    background-image: linear-gradient(to bottom,
-                          rgba(51, 47, 43, 0) 30%,
-                          rgba(51, 47, 43, 1) 100%),
-                      url("../images/church-outside.jpg");
+    background-image: linear-gradient(to bottom, rgba(51, 47, 43, 0) 30%, rgba(51, 47, 43, 1) 100%), url("../images/backgroundimage2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
