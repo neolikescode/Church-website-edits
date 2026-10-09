@@ -1,0 +1,764 @@
+/*
+    NN. Kgatla (2029139488)
+    CSIS1664 (2026) Website Project
+    File name: codi.css
+*/
+
+/* Church theme
+   Dark brown  #332F2B  header, footer, body text
+   CODI blue   #0062D7  headings
+   Deep blue   #004A9F  links
+   Warm cream  #F8F5EF  page background
+   White       #FFFFFF  header text, form areas
+   Gold        #C89B3C  small accents (borders only)
+*/
+
+
+/* =========================================
+   GENERAL WEBSITE STYLING
+   ========================================= */
+
+
+body {
+    background-image: url("../images/backgroundimage1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* Container: all page content sits inside this division */
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #0062D7;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h4 {
+    color: #004A9F;
+    font-size: 1.1em;
+}
+
+/* Links */
+a {
+    color: #004A9F;
+}
+
+a:hover {
+    color: #0062D7;
+}
+
+
+/* =========================================
+   HEADER AND NAVIGATION
+   ========================================= */
+
+header {
+    overflow: hidden;
+    padding: 10px 20px;
+    background-color: #332F2B;
+    border-bottom: 4px solid #C89B3C;
+}
+
+/* Church Logo and Name (floated left) */
+.header-info {
+    float: left;
+}
+
+.header-info img {
+    float: left;
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 25px;
+}
+
+header h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    line-height: 2em;
+}
+
+/* Navigation (floated right) */
+nav {
+    float: right;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 15px 15px 12px 15px;
+    border-bottom: 3px solid #332F2B;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.25em;
+    text-decoration: none;
+}
+
+/* Hover and current page look the same */
+nav a:hover,
+nav a.current {
+    background-color: #0062D7;
+    border-bottom-color: #C89B3C;
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    padding: 15px 20px;
+    background-color: #332F2B;
+    border-top: 4px solid #C89B3C;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #C89B3C;
+}
+
+
+/* =========================================
+   SHARED PAGE LAYOUT (all inner pages)
+   ========================================= */
+
+main {
+    padding: 0 20px;
+}
+
+/* Page heading: blue banner with gold underline */
+main h1 {
+    margin: 25px 0 0 0;
+    padding: 10px 20px;
+    border-bottom: 4px solid #C89B3C;
+    background-color: #0062D7;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Page heading inside a white content area */
+section h1 {
+    margin: 0 0 25px 0;
+}
+
+/* White content areas */
+#find-us,
+#form,
+#senior-pastor,
+#thank-you,
+#next-service,
+#give-intro,
+#donate,
+#join-ministry,
+#services,
+#upcoming-events {
+    margin: 25px 0;
+    padding: 25px;
+    border: 2px solid #0062D7;
+    background-color: #FFFFFF;
+}
+
+
+/* =========================================
+   HOME PAGE
+   ========================================= */
+
+/* Hero: photo with a gradient over it so the text stays legible */
+#hero {
+    position: relative;
+    height: 340px;
+    margin: 25px 0;
+    border: 2px solid #0062D7;
+    background-color: #332F2B;
+    background-image: linear-gradient(to bottom,
+                          rgba(51, 47, 43, 0) 30%,
+                          rgba(51, 47, 43, 1) 100%),
+                      url("../images/church-outside.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Tagline placed over the bottom of the photo (absolute) */
+#hero-tagline {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 2.2em;
+}
+
+#next-service h2 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #C89B3C;
+}
+
+/* Three link cards side by side (float) */
+#quick-links {
+    overflow: hidden;
+}
+
+.link-card {
+    float: left;
+    width: 31%;
+    margin: 0 1% 25px 1%;
+    padding: 20px;
+    border: 2px solid #0062D7;
+    border-top: 4px solid #C89B3C;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.link-card h2 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+
+/* =========================================
+   ABOUT US PAGE
+   ========================================= */
+
+/* ---- Senior pastor: names either side of the photo ---- */
+
+#senior-pastor {
+    text-align: center;
+}
+
+/* Reference point for the absolutely positioned items */
+#pastor-photo {
+    position: relative;
+}
+
+#pastor-photo img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #0062D7;
+}
+
+#pastor-photo h2 {
+    margin: 0;
+    font-size: 3.5em;
+    line-height: 1.1;
+}
+
+/* First name on the left of the photo */
+#pastor-first-name {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 35%;
+    text-align: right;
+}
+
+/* Last name on the right of the photo */
+#pastor-last-name {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 35%;
+    text-align: left;
+}
+
+/* Title at the bottom right of the photo */
+#pastor-title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 165px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+#pastor-title strong {
+    color: #004A9F;
+    font-size: 1.3em;
+}
+
+.pastor-bio {
+    max-width: 45em;
+    margin: 25px auto 0 auto;
+}
+
+/* ---- Mission and vision side by side (float) ---- */
+
+#mission,
+#vision {
+    float: left;
+    width: 47%;
+    margin: 0 1.5% 25px 1.5%;
+    padding: 25px;
+    border: 2px solid #0062D7;
+    background-color: #FFFFFF;
+}
+
+/* ---- Divine mandate ---- */
+
+#mandate {
+    clear: both;
+    margin: 0 0 25px 0;
+    padding: 25px;
+    border: 2px solid #0062D7;
+    background-color: #FFFFFF;
+}
+
+#mission h2,
+#vision h2,
+#mandate h2 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #C89B3C;
+}
+
+#mandate blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 4px solid #C89B3C;
+    background-color: #F8F5EF;
+    font-style: italic;
+}
+
+#mandate li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   SERVICES & EVENTS PAGE
+   ========================================= */
+
+/* Weekly services table */
+#services table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#services caption {
+    padding: 10px;
+    color: #004A9F;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#services th,
+#services td {
+    padding: .75em;
+    border: 1px solid #332F2B;
+    text-align: left;
+    vertical-align: top;
+}
+
+#services th {
+    border-bottom: 4px solid #C89B3C;
+    background-color: #0062D7;
+    color: #FFFFFF;
+}
+
+#services th:nth-child(1) {
+    width: 22%;
+}
+
+#services th:nth-child(2) {
+    width: 14%;
+}
+
+#services th:nth-child(3) {
+    width: 17%;
+}
+
+#services tbody tr:nth-child(even) {
+    background-color: #F8F5EF;
+}
+
+/* Event cards side by side (float) */
+.event-container {
+    overflow: hidden;
+}
+
+.event-card {
+    float: left;
+    width: 47%;
+    margin: 0 1.5% 20px 1.5%;
+    border: 2px solid #0062D7;
+    background-color: #F8F5EF;
+}
+
+.event-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.event-info {
+    padding: 15px;
+}
+
+.event-info h3 {
+    margin-top: 0;
+}
+
+.event-date {
+    margin: 0 0 8px 0;
+    padding-left: 8px;
+    border-left: 4px solid #C89B3C;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   GIVE PAGE
+   ========================================= */
+
+#give-intro {
+    text-align: center;
+}
+
+/* Nested list of links (also an index for the page) */
+#give-options {
+    max-width: 30em;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+#give-options li {
+    margin-bottom: .4em;
+}
+
+#donate h2,
+#join-ministry h2 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #C89B3C;
+}
+
+/* Donation sub-sections */
+#financial-giving,
+#material-donations,
+#treasurer-contact {
+    margin: 20px 0;
+    padding: 5px 0 5px 20px;
+    border-left: 4px solid #C89B3C;
+}
+
+#financial-giving h3,
+#material-donations h3,
+#treasurer-contact h3 {
+    margin-top: 0;
+}
+
+/* Ministry cards: photo floated left, text wraps around it */
+#join-ministry article {
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #0062D7;
+    background-color: #F8F5EF;
+}
+
+#join-ministry article h3 {
+    margin-top: 0;
+}
+
+#join-ministry article img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 0 20px 10px 0;
+    border: 2px solid #0062D7;
+}
+
+
+/* =========================================
+   CONTACT US PAGE
+   ========================================= */
+
+/* ---- Find us ---- */
+
+#find-us {
+    text-align: center;
+}
+
+#find-us h2 {
+    margin-top: 25px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #C89B3C;
+}
+
+#find-us address {
+    font-style: normal;
+}
+
+/* Church photos side by side (float) */
+#find-us div {
+    overflow: hidden;
+}
+
+#find-us figure {
+    float: left;
+    width: 40%;
+    margin: 0 5%;
+}
+
+#find-us img {
+    width: 100%;
+    border: 2px solid #0062D7;
+}
+
+#find-us figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+/* ---- Contact form ---- */
+
+#contact-form fieldset {
+    margin: 0 0 25px 0;
+    padding: 20px;
+    border: 2px solid #0062D7;
+}
+
+#contact-form legend {
+    padding: 0 10px;
+    color: #0062D7;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#contact-form div {
+    margin-bottom: 12px;
+}
+
+/* Labels sit above their controls */
+#contact-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+/* Titles for groups of radio buttons / check boxes */
+#contact-form .group-title {
+    margin: 0 0 6px 0;
+    font-weight: bold;
+}
+
+/* Text controls */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select,
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    max-width: 35em;
+    padding: .5em;
+    border: 1px solid #332F2B;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #332F2B;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#contact-form textarea {
+    height: 6em;
+}
+
+/* Radio buttons and check boxes: label next to the control */
+#contact-form input[type="radio"],
+#contact-form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+#contact-form input[type="radio"] + label,
+#contact-form input[type="checkbox"] + label {
+    display: inline;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Keyboard focus */
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    outline: 3px solid #0062D7;
+    outline-offset: 2px;
+}
+
+/* Submit and reset buttons */
+#form-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact-form input[type="submit"],
+#contact-form input[type="reset"] {
+    margin: 5px;
+    padding: .6em 1.5em;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #0062D7;
+}
+
+#contact-form input[type="reset"] {
+    background-color: #332F2B;
+}
+
+#contact-form input[type="submit"]:hover,
+#contact-form input[type="reset"]:hover {
+    background-color: #004A9F;
+}
+
+
+/* ---- Get in touch ---- */
+
+#get-in-touch {
+    margin: 25px 0;
+    padding: 25px;
+    border-top: 4px solid #C89B3C;
+    background-color: #FFFFFF;
+}
+
+#get-in-touch h2 {
+    margin-top: 0;
+}
+
+#get-in-touch strong {
+    color: #004A9F;
+}
+
+
+/* =========================================
+   PRINT STYLES
+   ========================================= */
+
+@media print {
+
+    body {
+        background-color: #FFFFFF;
+        color: #000000;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+    }
+
+    /* Not needed on paper */
+    nav,
+    #give-options,
+    #form-buttons {
+        display: none;
+    }
+
+    /* Backgrounds are not printed, so use dark text */
+    header,
+    footer {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    header h1 {
+        color: #000000;
+        font-size: 20pt;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: #000000;
+        break-after: avoid;
+    }
+
+    h1 {
+        font-size: 20pt;
+    }
+
+    h2 {
+        font-size: 16pt;
+    }
+
+    main h1 {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    #services th {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    #hero-tagline,
+    #pastor-first-name,
+    #pastor-last-name,
+    #pastor-title strong {
+        color: #000000;
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+
+    fieldset,
+    figure,
+    article,
+    table,
+    .event-card {
+        break-inside: avoid;
+    }
+}

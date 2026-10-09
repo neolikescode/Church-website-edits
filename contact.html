@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- NN. Kgatla (2029139488) -->
+<!-- CSIS1664(2026) Website Project -->
+<!-- File name: contact.html -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find City of Destiny International in Phalaborwa and contact us using our form.">
+    <meta name="author" content="NN. Kgatla">
+    <title>CODI &ndash; Contact us</title>
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/codi.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+
+            <div class="header-info">
+                <a href="index.html"><img src="images/logo.jpeg" alt="CODI Church logo (home page)" width="LOGO_W" height="LOGO_H"></a>
+                <h1>City of Destiny International</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="give.html">Give</a></li>
+                    <li><a href="services.html">Services &amp; events</a></li>
+                    <li><a href="contact.html" class="current">Contact us</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <!-- Find us -->
+            <section id="find-us">
+                <h1>Find us</h1>
+
+                <p>
+                    Visit us at our church premises alongside the R71 Road in
+                    Phalaborwa.
+                </p>
+
+                <h2>Our address</h2>
+
+                <address>
+                    CODI Church premises<br>
+                    Alongside R71 Road<br>
+                    Phalaborwa
+                </address>
+
+                <h2>Our church</h2>
+
+                <div>
+                    <figure>
+                        <img src="images/church-outside.jpg"
+                             alt="Outside view of CODI Church"
+                             width="OUTSIDE_W"
+                             height="OUTSIDE_H">
+                        <figcaption>CODI Church &ndash; outside</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/church-inside.jpg"
+                             alt="Inside view of CODI Church"
+                             width="INSIDE_W"
+                             height="INSIDE_H">
+                        <figcaption>CODI Church &ndash; inside</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+
+            <!-- Contact form -->
+            <section id="form">
+                <h1>Contact us</h1>
+
+                <form id="contact-form" method="get" action="success.html">
+
+                    <!-- Personal information -->
+                    <fieldset>
+                        <legend>Personal information</legend>
+
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div>
+                            <label for="surname">Surname:</label>
+                            <input type="text" id="surname" name="surname" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div>
+                            <p class="group-title">Gender:</p>
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- Visitor information -->
+                    <fieldset>
+                        <legend>Visitor information</legend>
+
+                        <div>
+                            <p class="group-title">I am a:</p>
+                        <div>
+                            <input type="radio" id="first-visitor" name="visitor-type" value="first-time" required>
+                            <label for="first-visitor">First-time visitor</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="returning-visitor" name="visitor-type" value="returning">
+                            <label for="returning-visitor">Returning visitor</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="regular-attender" name="visitor-type" value="regular">
+                            <label for="regular-attender">Regular attender</label>
+                        </div>
+                        </div>
+
+                        <div>
+                            <label for="heard-about">How did you hear about us?</label>
+
+                            <select id="heard-about" name="heard-about" required>
+                                <option value="">Please select an option</option>
+                                <option value="friend-family">Friend or family</option>
+                                <option value="social-media">Social media</option>
+                                <option value="church-member">Church member</option>
+                                <option value="church-event">Church event</option>
+                                <option value="search-engine">Search engine</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <p class="group-title">
+                                Would you like us to invite you when we have any events?
+                            </p>
+                        <div>
+                            <input type="radio" id="invite-yes" name="event-invitation" value="yes" required>
+                            <label for="invite-yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="invite-no" name="event-invitation" value="no">
+                            <label for="invite-no">No</label>
+                        </div>
+                        </div>
+
+                        <div>
+                            <p class="group-title">
+                                How would you like us to communicate with you?
+                            </p>
+                        <div>
+                            <input type="radio" id="phone-call" name="communication" value="phone-call" required>
+                            <label for="phone-call">Phone call</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="text-message" name="communication" value="text-message">
+                            <label for="text-message">Text message</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="whatsapp" name="communication" value="whatsapp">
+                            <label for="whatsapp">WhatsApp</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="communication-email" name="communication" value="email">
+                            <label for="communication-email">Email</label>
+                        </div>
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- Spiritual information -->
+                    <fieldset>
+                        <legend>Spiritual information</legend>
+
+                        <div>
+                            <p class="group-title">
+                                Have you accepted Jesus Christ as your Lord and Saviour?
+                            </p>
+                        <div>
+                            <input type="radio" id="accepted-yes" name="accepted-jesus" value="yes" required>
+                            <label for="accepted-yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="accepted-no" name="accepted-jesus" value="no">
+                            <label for="accepted-no">No</label>
+                        </div>
+                        </div>
+
+                        <div>
+                            <p class="group-title">
+                                Which ministry are you interested in joining?
+                            </p>
+
+                            <p>Please check all that apply.</p>
+
+                        <div>
+                            <input type="checkbox" id="intercession" name="ministry" value="intercession">
+                            <label for="intercession">Intercession</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="worship" name="ministry" value="worship">
+                            <label for="worship">Worship</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="ushering" name="ministry" value="ushering">
+                            <label for="ushering">Ushering</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="compassion" name="ministry" value="hand-of-compassion">
+                            <label for="compassion">Hand of Compassion</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="childrens-ministry" name="ministry" value="childrens-ministry">
+                            <label for="childrens-ministry">Children's ministry</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="counselling" name="ministry" value="counselling">
+                            <label for="counselling">Counselling</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="evangelism" name="ministry" value="evangelism">
+                            <label for="evangelism">Evangelism</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="other-ministry" name="ministry" value="other">
+                            <label for="other-ministry">Other</label>
+                        </div>
+
+                            <div>
+                                <label for="other-ministry-name">If other, please specify:</label>
+                                <input type="text" id="other-ministry-name" name="other-ministry-name">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="prayer-comments">
+                                Prayer requests or comments (optional):
+                            </label>
+
+                            <textarea id="prayer-comments"
+                                      name="prayer-comments"
+                                      rows="5"
+                                      cols="40"></textarea>
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- Submit and reset buttons -->
+                    <div id="form-buttons">
+                        <input type="submit" id="submit-contact" name="submit-contact" value="Submit">
+                        <input type="reset" id="clear-contact" name="clear-contact" value="Reset">
+                    </div>
+
+                </form>
+            </section>
+
+
+            <!-- Get in touch -->
+            <section id="get-in-touch">
+                <h2>Get in touch</h2>
+
+                <p>
+                    If you have any questions or would like to get in touch
+                    with us, you can contact us using the details below.
+                </p>
+
+                <p>
+                    <strong>Phone number:</strong><br>
+                    TODO: real church phone number
+                </p>
+
+                <p>
+                    <strong>Email address:</strong><br>
+                    TODO: real church email address
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 NN. Kgatla<br><em>Last update: 9 October 2026</em></p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
